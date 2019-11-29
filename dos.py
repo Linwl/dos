@@ -42,7 +42,7 @@ def send_thread():
         for s in socks:
             try:
                 s.send("f".encode())
-                # print "send OK!"
+                print("send OK!")
             except Exception as ex:
                 print("Send Exception:%s\n" % ex)
                 socks.remove(s)
